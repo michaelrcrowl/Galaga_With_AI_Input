@@ -44,7 +44,6 @@ The environment in which I created this project use the following:
 Open "spiral3.py" as this contains the main code.  When you run the program, it will first load the model from "ml_model/keras_model.h5"; this may take a minute depending on your setup.  My computer does not have a GPU as part of making AI accessible to kids.  
 
 After it loads the model, it will start your webcam, and then it will get to playing the game.  
-<<<<<<< HEAD
 
 ## Dataset
 
@@ -53,5 +52,3 @@ AI models learn best with great variations in its training data, but this isn't 
 After downloading the dataset (contains about 15,000 images), I created the "imageOverlayForAIModel.py" file.  The overlay script takes the "arrow.png" and overlays it on the background images.  The program creates multiple processes to create and save the images faster.  Each process will create one class of images ("up", "left", "right"), which correlate to the instructions we want to give to the game of Galaga ("shoot", "move left", "move right").  For each background, the process will create 10 data points by choosing 2 scales (making the arrow smaller to represent holding it farther from the camera) and 5 locations on the image (to represent various places you can hold the arrow in the webcam).  Italso chooses a random rotation for each data point.
 
 To summarize, for each background I produce 10 arrow overlays for each class, or 30 total. A current iteration of the model that's not ready yet will use all 15,000 images for a total of about 405,000 datapoints.  To accommodate the limits of browser memory when using Teachable Machine, the current model uses 4000 datapoints for each class, or 16,000 datapoints total.
-=======
->>>>>>> 0e4f9ae89c9c4e640e60bed6f734d927f026cb96
