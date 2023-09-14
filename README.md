@@ -2,7 +2,9 @@
 
 ## Overview
 
+I set up this project for an outreach event to high school students.  I wanted the idea of AI to be accessible and fun to garner interest in the broader field of computer science.  As such, I used Google's [Teachable Machine](https://teachablemachine.withgoogle.com/train) to create my model and incorporated it into a game of Galaga that I made using pythonGraph (wrapper for pygame).  My game will run constantly (with infinite lives and enemies respawning) and students will hold up signs to the camera to interface with the game.
 
+The model is relatively small since you can only upload as many pictures as your browser has memory; therefore, each of my 4 classes contain only 4000 pictures (dataset described later).
 
 ## Dependencies
 
@@ -51,4 +53,5 @@ AI models learn best with great variations in its training data, but this isn't 
 After downloading the dataset (contains about 15,000 images), I created the "imageOverlayForAIModel.py" file.  The overlay script takes the "arrow.png" and overlays it on the background images.  The program creates multiple processes to create and save the images faster.  Each process will create one class of images ("up", "left", "right"), which correlate to the instructions we want to give to the game of Galaga ("shoot", "move left", "move right").  For each background, the process will create 10 data points by choosing 2 scales (making the arrow smaller to represent holding it farther from the camera) and 5 locations on the image (to represent various places you can hold the arrow in the webcam).  Italso chooses a random rotation for each data point.
 
 To summarize, for each background I produce 10 arrow overlays for each class, or 30 total. A current iteration of the model that's not ready yet will use all 15,000 images for a total of about 405,000 datapoints.  To accommodate the limits of browser memory when using Teachable Machine, the current model uses 4000 datapoints for each class, or 16,000 datapoints total.
+=======
 >>>>>>> 0e4f9ae89c9c4e640e60bed6f734d927f026cb96
