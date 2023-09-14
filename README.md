@@ -2,9 +2,9 @@
 
 ## Overview
 
-I set up this project for an outreach event to high school students.  I wanted the idea of AI to be accessible and fun to garner interest in the broader field of computer science.  As such, I used Google's [Teachable Machine](https://teachablemachine.withgoogle.com/train) to creat my model and incorporated it into a game of Galaga that I made using pygame.  My game will run constantly (with infinite lives and enemies respawning) and students will hold up signs to the camera to interface with the game.
+I set up this project for an outreach event to high school students.  I wanted the idea of AI to be accessible and fun to garner interest in the broader field of computer science.  As such, I used Google's [Teachable Machine](https://teachablemachine.withgoogle.com/train) to create my model and incorporated it into a game of Galaga that I made using pythonGraph (wrapper for pygame).  My game will run constantly (with infinite lives and enemies respawning) and students will hold up signs to the camera to interface with the game.
 
-The model is relatively small since you can only upload as many pictures as your browser has memory; therefore, each of my 4 classes contain 4000 pictures (dataset described later).
+The model is relatively small since you can only upload as many pictures as your browser has memory; therefore, each of my 4 classes contain only 4000 pictures (dataset described later).
 
 ## Dependencies
 
