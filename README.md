@@ -25,6 +25,7 @@ The environment in which I created this project use the following:
 	- random
 	- math
 	- multiprocessing
+- My computer does not have a GPU as part of making AI accessible to kids.
 
 ## Installation and Setup
 
@@ -32,7 +33,7 @@ The environment in which I created this project use the following:
 	- See the various installation options at the bottom of the webpage
 - Install the necessary packages.  For Windows in VS Code, use the Powershell terminal at the bottom of the screen.  If you don't see it when you open VS Code, you can find it with the "View" drop down menu and clicking "Terminal"; alternatively, you can press `Ctrl+/``
 	- `py -m pip install numpy`
-	- `py -m pip install cv2`
+	- `py -m pip install opencv-python`
 	- `py -m pip install pillow`
 	- `py -m pip install keras`
 	- `py -m pip install pythonGraph`
@@ -41,9 +42,9 @@ The environment in which I created this project use the following:
 
 ## Running the program
 
-Open "spiral3.py" as this contains the main code.  When you run the program, it will first load the model from "ml_model/keras_model.h5"; this may take a minute depending on your setup.  My computer does not have a GPU as part of making AI accessible to kids.  
+Open "spiral3.py" as this contains the main code.  When you run the program, it will first load the model from "ml_model/keras_model.h5"; this may take a minute depending on your setup.    
 
-After it loads the model, it will start your webcam, and then it will get to playing the game.  
+After it loads the model, it will start your webcam, and then it will get to playing the game.  This is when you hold the signs in front of the camera.
 
 ## Dataset
 
